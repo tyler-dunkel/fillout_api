@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FillOut API App</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Welcome to the FillOut API (now with filters!)</h1>
+      <p>You can access the only available api endpoint at: {domain}/:formId/filteredResponses. Here are some example URLs:
+        <h3>1. using limit and sort:</h3>
+        <p>{domain}/cLZojxk94ous/filteredResponses?limit=5&sort=asc</p>
+        <h3>2. using a filter for "yearly checkin" date equal to 2024-02-01 ({"id":"dSRAe3hygqVwTpPK69p5td","condition":"equals","value":"2024-02-01"}):</h3>
+        <p>{domain}/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%222024-02-01%22%7D%5D</p>
+        <h3>3. using two filters for "yearly checkin" date less than to 2024-02-02 and "anything else to share" equal to "Nothing much to share yet!": </h3>
+        <p>{domain}/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%20%22less_than%22%2C%22value%22%3A%222024-02-03%22%7D%2C%2520%7B%22id%22%3A%224KC356y4M6W8jHPKx9QfEy%22%2C%22condition%22%3A%20%22equals%22%2C%22value%22%3A%22Nothing%20much%20to%20share%20yet!%22%7D%5D</p>
+      </p>
+    </div>
+  </body>
+</html>
