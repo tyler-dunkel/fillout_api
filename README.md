@@ -24,6 +24,11 @@ This is an Express application written in Typescript that adds filtering logic o
 2. Run `npm run docker:run`
 3. visit application at `localhost:3000`
 
+### Testing Instructions
+1. Clone this repository to your local machine.
+2. Install dependencies using `npm install`
+3. Run `npm run test`
+
 ### API Endpoint
 
 #### `GET :formId/filteredResponses`
